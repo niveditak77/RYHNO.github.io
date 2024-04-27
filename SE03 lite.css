@@ -114,7 +114,7 @@ nav .logo {
 
 .container1 {
     position: absolute;
-    bottom: 4px;
+    bottom: 1px;
     left:9.5%;
     display: flex;
     flex-direction: column;
