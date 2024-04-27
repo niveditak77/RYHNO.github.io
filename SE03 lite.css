@@ -17,13 +17,15 @@ body {
     padding: 0;
     height: 100%;
 }
+
+
 .container {
     position: relative;
     width: 100%;
     height: 100vh;
     background-image: url(Red.png);
-    background-position: right top; /* Align the background image to the top right corner */
-    background-size: 80%; /* Adjust the size of the background image */
+    background-position: center top; /* Adjusted to center horizontally and position at the top */
+    background-size: 60%; /* Adjust the size of the background image */
     background-repeat: no-repeat; /* Ensures the background image isn't repeated */
     padding: 1px 10%;
 }
@@ -34,9 +36,6 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
-
-
-
 
 nav .logo {
     position: absolute;
@@ -115,7 +114,7 @@ nav .logo {
 
 .container1 {
     position: absolute;
-    bottom: 30px;
+    bottom: 6px;
     left:9.5%;
     display: flex;
     flex-direction: column;
@@ -212,5 +211,64 @@ button {
     }
 }
 
+@media only screen and (max-width: 1080px) and (max-height: 2340px) {
+    .container {
+        background-size: 80%; /* Adjust the size of the background image */
+        padding: 20px 5%; /* Adjust padding for smaller screens */
+    }
+
+    nav .logo {
+        width: 150px; /* Adjust logo size */
+        top: 10px; /* Adjust logo position */
+    }
+
+    .content {
+        margin-top: 10%; /* Adjust content margin-top */
+    }
+
+    .content h4 {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .content h1 {
+        font-size: 60px; /* Adjust font size */
+        margin-top: 5px; /* Adjust margin-top */
+    }
+
+    .content p {
+        max-width: 100%; /* Adjust max width */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .content h3 {
+        font-size: 16px; /* Adjust font size */
+        margin-top: 20px; /* Adjust margin-top */
+    }
+
+    .colour-select {
+        margin-top: 15px; /* Adjust margin-top */
+    }
+
+    .colour-select div {
+        width: 30px; /* Adjust width */
+        height: 30px; /* Adjust height */
+        margin-right: 5px; /* Adjust margin-right */
+    }
+
+    .container1 {
+        left: 5%; /* Adjust left position */
+        bottom: 10px; /* Adjust bottom position */
+    }
+
+    button {
+        width: 120px; /* Adjust button width */
+        height: 40px; /* Adjust button height */
+        font-size: 12px; /* Adjust font size */
+    }
+
+    .container {
+        background-position: center calc(100% - 65px); /* Adjust background position */
+    }
+}
 
   
